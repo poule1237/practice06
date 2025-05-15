@@ -1,27 +1,24 @@
 package com.javaex.ex03;
 
 public class Shape {
+	
+	protected String fillColor;
+	protected String lineColor;
+	
+	public Shape() {
+	}
+	
+	public Shape(String fillColor, String lineColor) {
+		this.fillColor = fillColor;
+		this.lineColor = lineColor;
+	}
 
-    // 필드 (private → protected로 변경)
-    protected String fillColor;
-    protected String lineColor;
+	public void setFillColor(String fillColor) {
+		this.fillColor = fillColor;
+	}
 
-    // 생성자
-    public Shape() {
-    }
-
-    public Shape(String fillColor, String lineColor) {
-        this.fillColor = fillColor;
-        this.lineColor = lineColor;
-    }
-
-    // 메소드 - setter
-    public void setFillColor(String fillColor) {
-        this.fillColor = fillColor;
-    }
-
-    public void setLineColor(String lineColor) {
-        this.lineColor = lineColor;
-    }
-
+	public void setLineColor(String lineColor) {
+		this.lineColor = lineColor;
+	}
+	
 }

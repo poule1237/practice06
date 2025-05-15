@@ -18,8 +18,3 @@ public class Triangle extends Shape{
 		System.out.println("#세로:"+height);
 	}
 }
-
-
-
-
-

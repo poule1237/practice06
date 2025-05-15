@@ -2,27 +2,17 @@ package com.javaex.ex01;
 
 public class Person {
 	
-	//필드
 	private String name;
 	private String hp;
 	
-	
-	
-	//생성자
 	public Person() {
-		
 	}
-	
+
 	public Person(String name, String hp) {
-		super();
 		this.name = name;
 		this.hp = hp;
 	}
 
-	
-	
-	//메소드gs
-	
 	public String getName() {
 		return name;
 	}
@@ -38,12 +28,18 @@ public class Person {
 	public void setHp(String hp) {
 		this.hp = hp;
 	}
-	
-	
-	//메소드일반
-	
+
 	public void showInfo() {
-		System.out.println("#이름:" + this.name + ", #" + this.hp);
+		System.out.println("#이름:" + name + ", #핸드폰:" + hp);
 	}
+	
+	
+	@Override
+	public String toString() {
+		return "Person [name=" + name + ", hp=" + hp + "]";
+	}
+	
+	
+	
 	
 }

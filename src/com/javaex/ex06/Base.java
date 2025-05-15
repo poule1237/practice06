@@ -19,4 +19,3 @@ public class Base {
     	System.out.println("밤에는 숙면");
     }
 }
-
